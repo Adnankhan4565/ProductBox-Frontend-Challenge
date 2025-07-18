@@ -1,26 +1,85 @@
-/**
- * Below are the colors that are used in the app. The colors are defined in the light and dark mode.
- * There are many other ways to style your app. For example, [Nativewind](https://www.nativewind.dev/), [Tamagui](https://tamagui.dev/), [unistyles](https://reactnativeunistyles.vercel.app), etc.
- */
+const lightColors = {
+  background: "#efeff0",
+  foreground: "#3c3c47",
+  card: "#f8f8f9",
+  primary: "#6366f1",
+  primaryForeground: "#ffffff",
+  secondary: "#dddde0",
+  secondaryForeground: "#565663",
+  muted: "#efeff0",
+  mutedForeground: "#7b7b84",
+  accent: "#ededf1",
+  accentForeground: "#4c4c58",
+  destructive: "#dc2626",
+  destructiveForeground: "#ffffff",
+  border: "#dddde0",
+  input: "#dddde0",
+  ring: "#6366f1",
+};
 
-const tintColorLight = '#0a7ea4';
-const tintColorDark = '#fff';
+const darkColors = {
+  background: "#1a1a1d",
+  foreground: "#e8e8ea",
+  card: "#26262a",
+  primary: "#8b5cf6",
+  primaryForeground: "#1a1a1d",
+  secondary: "#2e2e32",
+  secondaryForeground: "#d4d4d6",
+  muted: "#26262a",
+  mutedForeground: "#a8a8ac",
+  accent: "#333338",
+  accentForeground: "#d4d4d6",
+  destructive: "#dc2626",
+  destructiveForeground: "#1a1a1d",
+  border: "#2e2e32",
+  input: "#2e2e32",
+  ring: "#8b5cf6",
+};
+
+const tintColorLight = lightColors.primary;
+const tintColorDark = darkColors.primary;
 
 export const Colors = {
   light: {
-    text: '#11181C',
-    background: '#fff',
+    text: lightColors.foreground,
+    background: lightColors.background,
     tint: tintColorLight,
-    icon: '#687076',
-    tabIconDefault: '#687076',
+    icon: lightColors.mutedForeground,
+    tabIconDefault: lightColors.mutedForeground,
     tabIconSelected: tintColorLight,
+    card: lightColors.card,
+    border: lightColors.border,
+    muted: lightColors.muted,
+    destructive: lightColors.destructive,
+    primary: lightColors.primary,
+    primaryForeground: lightColors.primaryForeground,
+    secondary: lightColors.secondary,
+    secondaryForeground: lightColors.secondaryForeground,
+    accent: lightColors.accent,
+    accentForeground: lightColors.accentForeground,
+    input: lightColors.input,
+    ring: lightColors.ring,
+    success: "#10b981",
   },
   dark: {
-    text: '#ECEDEE',
-    background: '#151718',
+    text: darkColors.foreground,
+    background: darkColors.background,
     tint: tintColorDark,
-    icon: '#9BA1A6',
-    tabIconDefault: '#9BA1A6',
+    icon: darkColors.mutedForeground,
+    tabIconDefault: darkColors.mutedForeground,
     tabIconSelected: tintColorDark,
+    card: darkColors.card,
+    border: darkColors.border,
+    muted: darkColors.muted,
+    destructive: darkColors.destructive,
+    primary: darkColors.primary,
+    primaryForeground: darkColors.primaryForeground,
+    secondary: darkColors.secondary,
+    secondaryForeground: darkColors.secondaryForeground,
+    accent: darkColors.accent,
+    accentForeground: darkColors.accentForeground,
+    input: darkColors.input,
+    ring: darkColors.ring,
+    success: "#34d399",
   },
 };
