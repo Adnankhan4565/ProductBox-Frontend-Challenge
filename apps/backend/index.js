@@ -4,12 +4,19 @@ var path = require('path');
 var favicon = require('serve-favicon');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var cors = require('cors'); // Add this
 var logger = require('./lib/logger');
 
 var items = require('./routes/items');
 
 var app = express();
 var log = logger(app);
+
+// CORS middleware
+app.use(cors({
+  origin: 'http://localhost:3000',
+  credentials: true
+}));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
