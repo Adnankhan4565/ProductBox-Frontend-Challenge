@@ -1,18 +1,18 @@
-"use client"
+"use client";
 
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
-import { Button } from '@/components/ui/button'
-import { ModeToggle } from '@/components/mode-toggle'
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { Button } from "@/components/ui/button";
+import { ModeToggle } from "@/components/mode-toggle";
 
-import { ShoppingBag, Plus, Home, List } from 'lucide-react'
-import { SellItemModal } from './SellItemModal'
-import { CartDropdown } from './CartDropdown'
+import { ShoppingBag, Plus, Home, List } from "lucide-react";
+import { ItemModal } from "./ItemModal";
+import { CartDropdown } from "./CartDropdown";
 
 export function Navbar() {
-  const pathname = usePathname()
-  
-  const isActive = (path: string) => pathname === path
+  const pathname = usePathname();
+
+  const isActive = (path: string) => pathname === path;
 
   return (
     <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -24,11 +24,11 @@ export function Navbar() {
             </div>
             <span className="text-xl font-bold tracking-tight">RandoStore</span>
           </Link>
-          
+
           <div className="flex items-center space-x-1">
             <Link href="/">
-              <Button 
-                variant={isActive('/') ? "secondary" : "ghost"}
+              <Button
+                variant={isActive("/") ? "secondary" : "ghost"}
                 size="sm"
                 className="flex items-center gap-2"
               >
@@ -36,10 +36,10 @@ export function Navbar() {
                 <span className="hidden sm:inline">Home</span>
               </Button>
             </Link>
-            
+
             <Link href="/items">
-              <Button 
-                variant={isActive('/items') ? "secondary" : "ghost"}
+              <Button
+                variant={isActive("/items") ? "secondary" : "ghost"}
                 size="sm"
                 className="flex items-center gap-2"
               >
@@ -47,11 +47,11 @@ export function Navbar() {
                 <span className="hidden sm:inline">Browse</span>
               </Button>
             </Link>
-                        
-            <SellItemModal />
-            
+
+            <ItemModal />
+
             <CartDropdown />
-            
+
             <div className="ml-2 pl-2 border-l">
               <ModeToggle />
             </div>
@@ -59,5 +59,5 @@ export function Navbar() {
         </div>
       </div>
     </nav>
-  )
+  );
 }
