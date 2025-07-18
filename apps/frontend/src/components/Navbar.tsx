@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button'
 import { ModeToggle } from '@/components/mode-toggle'
 
 import { ShoppingBag, Plus, Home, List } from 'lucide-react'
+import { SellItemModal } from './SellItemModal'
 import { CartDropdown } from './CartDropdown'
 
 export function Navbar() {
@@ -46,19 +47,9 @@ export function Navbar() {
                 <span className="hidden sm:inline">Browse</span>
               </Button>
             </Link>
+                        
+            <SellItemModal />
             
-            <Link href="/add-item">
-              <Button 
-                variant={isActive('/add-item') ? "secondary" : "ghost"}
-                size="sm"
-                className="flex items-center gap-2"
-              >
-                <Plus className="h-4 w-4" />
-                <span className="hidden sm:inline">Sell</span>
-              </Button>
-            </Link>
-            
-            {/* Cart Dropdown */}
             <CartDropdown />
             
             <div className="ml-2 pl-2 border-l">
