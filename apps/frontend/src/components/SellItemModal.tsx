@@ -49,8 +49,7 @@ export function SellItemModal() {
       }
       
     } catch (error) {
-      console.error('Failed to save item:', error)
-      // In a real app, you might want to show an error toast here
+      console.error('Failed to save item:', error)     
     } finally {
       setLoading(false)
     }
