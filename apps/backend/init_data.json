@@ -1,9 +1,34 @@
 {
   "data": {
-    "1" : { "id": 1, "name": "King Size Bed", "price": "300", "img": "http://localhost:3001/images/bed.jpg"},
-    "2" : { "id": 2, "name": "Comfy Slippers", "price": "15", "img": "http://localhost:3001/images/slippers.jpg"},
-    "3" : { "id": 3, "name": "CD Rack", "price": "100", "img": "http://localhost:3001/images/rack.jpg"},
-    "4" : { "id": 4, "name": "Glow Stick Bundle", "price": "10", "img": "http://localhost:3001/images/sticks.jpg"},
-    "5" : { "id": 5, "name": "Cookie Jar", "price": "25", "img": "http://localhost:3001/images/cookies.jpg"}
+    "1": {
+      "id": 1,
+      "name": "King Size Bed",
+      "price": "300",
+      "img": "https://product-box-assessment-backend.vercel.app/images/bed.jpg"
+    },
+    "2": {
+      "id": 2,
+      "name": "Comfy Slippers",
+      "price": "15",
+      "img": "https://product-box-assessment-backend.vercel.app/images/slippers.jpg"
+    },
+    "3": {
+      "id": 3,
+      "name": "CD Rack",
+      "price": "100",
+      "img": "https://product-box-assessment-backend.vercel.app/images/rack.jpg"
+    },
+    "4": {
+      "id": 4,
+      "name": "Glow Stick Bundle",
+      "price": "10",
+      "img": "https://product-box-assessment-backend.vercel.app/images/sticks.jpg"
+    },
+    "5": {
+      "id": 5,
+      "name": "Cookie Jar",
+      "price": "25",
+      "img": "https://product-box-assessment-backend.vercel.app/images/cookies.jpg"
+    }
   }
 }
