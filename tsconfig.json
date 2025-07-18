@@ -13,13 +13,12 @@
 		"declaration": true,
 		"declarationMap": true,
 		"paths": {
-			"@shared/*": ["packages/shared/src/*"]
+			"@randostore/types": ["packages/types/src/*"]
 		}
 	},
 	"files": [],
 	"references": [
-		{ "path": "packages/shared" },
-		{ "path": "apps/frontend" },
-		{ "path": "apps/backend" }
+		{ "path": "packages/types" },
+		{ "path": "apps/frontend" }
 	]
 }
